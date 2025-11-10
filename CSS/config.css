@@ -1,0 +1,94 @@
+/* 🌐 Style général */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* gris très clair */
+  color: #2c2c2c; /* gris foncé */
+}
+
+/* 🧭 Header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #dcdcdc;
+}
+
+/* 🧭 Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+}
+
+/* 🦶 Footer */
+footer {
+  background-color: #2c3e50;
+  color: #cad2c5;
+  padding: 2em 1em;
+  border-top: 3px solid #354f52;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;         /* Changement ici */
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;             /* Pour éviter le débordement sur petits écrans */
+}
+
+.footer-info {
+  text-align: left;            /* Alignement à gauche */
+  line-height: 1.6;
+  flex: 1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5em;
+  flex: 1;
+  justify-content: flex-end;   /* Alignement à droite */
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+}

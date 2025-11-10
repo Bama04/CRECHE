@@ -1,0 +1,77 @@
+
+
+/* 🖼️ Galerie intro */
+.galerie-intro {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.galerie-intro h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.galerie-intro p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* 🖼️ Galerie grid */
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.galerie-grid figure {
+  margin: 0;
+  background-color: #f4f6f8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.galerie-grid figure:hover {
+  transform: scale(1.02);
+}
+
+.galerie-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galerie-grid figcaption {
+  padding: 15px;
+  font-size: 1em;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+/* 📌 Informations */
+.galerie-info {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.galerie-info h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.galerie-info p {
+  font-size: 1.1em;
+  color: #555;
+}
+

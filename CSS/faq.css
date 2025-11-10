@@ -1,0 +1,39 @@
+
+/* Contenu principal */
+main {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+ /* Cartes FAQ */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 6px solid #2c3e50;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 5px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 15px;
+}

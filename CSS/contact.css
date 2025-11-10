@@ -1,0 +1,164 @@
+
+/* 📞 Section Contact */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fffdf5;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  border-left: 6px solid #2c3e50;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 2.5px solid #2c3e50;
+  padding-bottom: 5px;
+}
+
+.card p {
+  font-size: 1.05em;
+  margin-bottom: 10px;
+} 
+/* Formulaire d'inscription */
+/* form {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin-top: 10px;
+
+  border: 1px solid red;
+}
+ label {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form input[type="submit"] {
+  background-color: #2c3e50b4;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color:  #2c3e50;
+} */
+
+/* Formulaire d'inscription */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px 70px;
+  border: 1px solid red;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Étiquettes */
+form label {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Champs de saisie */
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Zone de texte */
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Bouton d'envoi */
+form input[type="submit"] {
+  background-color: #2c3e50b4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: start;
+  width: fit-content;
+}
+
+/* Effet au survol */
+form input[type="submit"]:hover {
+  background-color: #2c3e50;
+}
+
+/* 🔘 Bouton */
+/* .btn {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}
+
+.btn:active {
+  transform: scale(0.98);
+} */
