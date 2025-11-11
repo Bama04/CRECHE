@@ -43,7 +43,10 @@ form {
   gap: 15px;
   margin-top: 20px;
   padding: 20px 70px;
+<<<<<<< HEAD
   border: 1px solid red;
+=======
+>>>>>>> 597b1c4 (premier Commit)
   border-radius: 8px;
   box-sizing: border-box;
 }
