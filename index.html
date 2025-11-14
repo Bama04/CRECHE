@@ -11,8 +11,15 @@
 <body>
 
   <header>
-    <h1>Bienvenue à la Crèche Paradis des Anges</h1>
-    <p>Un monde d’éveil et de tendresse pour vos petits</p>
+    <div class="place">
+      <div class="logo">
+        <img src="Image/logo.png" alt="logo">
+      </div>
+      <h1>Bienvenue à la Crèche Paradis des Anges</h1>
+    </div>
+    <strong>
+      <p>Un monde d’éveil et de tendresse pour vos petits</p>
+    </strong>
     <nav>
       <ul>
         <li><a href="index.html" target="_blank">Accueil</a></li>
@@ -26,69 +33,89 @@
     </nav>
   </header>
 
-  <section id="intro">
-    <h2>Pourquoi choisir notre crèche ?</h2>
-    <p>Nous offrons un environnement sécurisé, joyeux et stimulant pour accompagner le développement de chaque enfant.
-    </p>
-    <ul>
-      <li>👶 Accueil chaleureux dès 3 mois</li>
-      <li>🎨 Activités ludiques et éducatives</li>
-      <li>👩‍🏫 Équipe bienveillante et qualifiée</li>
-      <li>🌳 Espaces verts et jeux extérieurs</li>
-    </ul>
-    <a href="HTML/programmes.html" class="btn">Découvrir nos programmes</a>
-  </section>
+  <script>
+    const toggle = document.createElement('button');
+    toggle.classList.add('menu-toggle');
+    toggle.textContent = '☰';
+    document.querySelector('header').appendChild(toggle);
 
-  <section id="actualites">
-    <h2>Nos dernières nouvelles</h2>
+    const nav = document.querySelector('nav ul');
 
-    <article>
-      <h3>🎉 Fête des familles – Novembre 2025</h3>
-      <p>Une journée pleine de rires, de jeux et de partages entre parents, enfants et éducateurs.</p>
-    </article>
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 
-    <article>
-      <h3>📚 Atelier lecture pour les grands</h3>
-      <p>Chaque mercredi, les enfants découvrent de belles histoires pour développer leur imagination.</p>
-    </article>
-    
-    <article>
-      <h3>🎨 Atelier Créatif</h3>
-      <p>Chaque mercredi, les enfants explorent les arts plastiques à travers peinture, collage et modelage pour
-        exprimer leur imagination.</p>
-    </article>
-
-    <article>
-      <h3>🎭 Atelier Théâtre</h3>
-      <p>Les enfants découvrent le jeu de scène, les émotions et les personnages en s’amusant à créer de petites pièces
-        et improvisations.</p>
-    </article>
-
-    <article>
-      <h3>🎶 Atelier Musique</h3>
-      <p>Ils apprennent à reconnaître les sons, les rythmes et les instruments tout en chantant et en jouant ensemble.
+  <main>
+    <section id="intro">
+      <h2>Pourquoi choisir notre crèche ?</h2>
+      <p>Nous offrons un environnement sécurisé, joyeux et stimulant pour accompagner le développement de chaque enfant.
       </p>
-    </article>
+      <ul>
+        <li>👶 Accueil chaleureux dès 3 mois</li>
+        <li>🎨 Activités ludiques et éducatives</li>
+        <li>👩‍🏫 Équipe bienveillante et qualifiée</li>
+        <li>🌳 Espaces verts et jeux extérieurs</li>
+      </ul>
+      <a href="HTML/programmes.html" class="btn">Découvrir nos programmes</a>
+    </section>
 
-    <article>
-      <h3>🌱 Atelier Nature</h3>
-      <p>Une immersion dans le monde naturel pour apprendre à observer, respecter et comprendre les plantes, les animaux
-        et l’environnement.</p>
-    </article>
+    <section id="actualites">
+      <h2>Nos dernières nouvelles</h2>
 
-    <article>
-      <h3>🧩 Atelier Jeux de Société</h3>
-      <p>Chaque semaine, les enfants développent leur logique, leur esprit d’équipe et leur patience à travers des jeux
-        adaptés à leur âge.</p>
-    </article>
-  </section>
+      <article>
+        <h3>🎉 Fête des familles – Novembre 2025</h3>
+        <p>Une journée pleine de rires, de jeux et de partages entre parents, enfants et éducateurs.</p>
+      </article>
+
+      <article>
+        <h3>📚 Atelier lecture pour les grands</h3>
+        <p>Chaque mercredi, les enfants découvrent de belles histoires pour développer leur imagination.</p>
+      </article>
+
+      <article>
+        <h3>🎨 Atelier Créatif</h3>
+        <p>Chaque mercredi, les enfants explorent les arts plastiques à travers peinture, collage et modelage pour
+          exprimer leur imagination.</p>
+      </article>
+
+      <article>
+        <h3>🎭 Atelier Théâtre</h3>
+        <p>Les enfants découvrent le jeu de scène, les émotions et les personnages en s’amusant à créer de petites
+          pièces
+          et improvisations.</p>
+      </article>
+
+      <article>
+        <h3>🎶 Atelier Musique</h3>
+        <p>Ils apprennent à reconnaître les sons, les rythmes et les instruments tout en chantant et en jouant ensemble.
+        </p>
+      </article>
+
+      <article>
+        <h3>🌱 Atelier Nature</h3>
+        <p>Une immersion dans le monde naturel pour apprendre à observer, respecter et comprendre les plantes, les
+          animaux
+          et l’environnement.</p>
+      </article>
+
+      <article>
+        <h3>🧩 Atelier Jeux de Société</h3>
+        <p>Chaque semaine, les enfants développent leur logique, leur esprit d’équipe et leur patience à travers des
+          jeux
+          adaptés à leur âge.</p>
+      </article>
+    </section>
+  </main>
 
   <footer class="footer-container">
     <p>&copy; 2025 Paradis des Anges – Bujumbura</p>
-    <p>📍 Avenue de l’Espoir, Quartier Kabondo</p>
+    <p>📍 Avenue de l’Espoir, Quartier Mutanga</p>
     <p>🕒 Lun–Ven : 7h30 – 17h00</p>
     <p><a href="HTML/contact.html">Nous contacter</a></p>
-    <p>Matricule : BIU-BST-12-050-2024</p>
+    <i>
+      <p>Matricule : BIU-BST-12-050-2024</p>
+    </i>
   </footer>
 </body>
 

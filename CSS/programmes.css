@@ -23,11 +23,13 @@ section {
 }
 
 .card h2 {
-  font-size: 1.5em;
   margin-bottom: 15px;
   color: #2c3e50;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 900;
 }
 
 .card p {

@@ -13,11 +13,35 @@ header {
   color: #fff;
   padding: 40px 20px;
   text-align: center;
+  position: relative;
+}
+
+.place {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: -10px;
+  left: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.5em;
+  font-weight: 900;
   letter-spacing: 1px;
 }
 
@@ -44,12 +68,79 @@ nav ul li a {
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 4px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
   background-color: #34495e;
 }
+
+/* ====== MENU TOGGLE (MOBILE) ====== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 10px;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+
+/* ============================= */
+/* 📱 RESPONSIVE MEDIA QUERIES   */
+/* ============================= */
+
+/* Tablette */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .place {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    position: static; /* ✅ logo se place au-dessus */
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    display: none; /* caché par défaut */
+    flex-direction: column;
+    background: #34495e;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  nav ul.active {
+    display: flex; /* affiché quand actif */
+  }
+
+  .menu-toggle {
+    display: block; /* visible sur mobile */
+  }
+}
+
 
 /* 🦶 Footer */
 footer {
@@ -62,33 +153,21 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: row;         /* Changement ici */
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
   flex-wrap: wrap;             /* Pour éviter le débordement sur petits écrans */
 }
 
-.footer-info {
-  text-align: left;            /* Alignement à gauche */
-  line-height: 1.6;
-  flex: 1;
-}
 
-.footer-links {
-  display: flex;
-  gap: 1.5em;
-  flex: 1;
-  justify-content: flex-end;   /* Alignement à droite */
-}
-
-.footer-links a {
+.footer-container a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.footer-container a:hover {
   color: #3498db;
 }

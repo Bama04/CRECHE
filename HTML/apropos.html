@@ -12,8 +12,15 @@
 
   <!-- 🧭 En-tête -->
   <header>
-    <h1>À propos de notre crèche</h1>
-    <p>Découvrez notre mission, nos valeurs et notre équipe dévouée</p>
+    <div class="place">
+      <div class="logo">
+        <img src="../Image/logo.png" alt="logo">
+      </div>
+      <h1>À propos de notre crèche</h1>
+    </div>
+    <strong>
+      <p>Découvrez notre mission, nos valeurs et notre équipe dévouée</p>
+    </strong>
     <nav>
       <ul>
         <li><a href="../index.html" target="_blank">Accueil</a></li>
@@ -27,6 +34,19 @@
     </nav>
   </header>
 
+  <script>
+    const toggle = document.createElement('button');
+    toggle.classList.add('menu-toggle');
+    toggle.textContent = '☰';
+    document.querySelector('header').appendChild(toggle);
+
+    const nav = document.querySelector('nav ul');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+  
   <!-- 🎯 Mission -->
   <section class="mission">
     <h2>Notre mission</h2>
@@ -98,10 +118,12 @@
   <!-- 🦶 Pied de page -->
   <footer class="footer-container">
     <p>&copy; 2025 Paradis des Anges – Bujumbura</p>
-    <p>📍 Avenue de l’Espoir, Quartier Kabondo</p>
+    <p>📍 Avenue de l’Espoir, Quartier Nutanga</p>
     <p>🕒 Lun–Ven : 7h30 – 17h00</p>
     <p><a href="contact.html">Nous contacter</a></p>
-    <p>Matricule : BIU-BST-12-050-2024</p>
+    <i>
+      <p>Matricule : BIU-BST-12-050-2024</p>
+    </i>
   </footer>
 
 </body>
