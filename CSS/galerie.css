@@ -36,6 +36,8 @@
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  height: 310px;
+  cursor: pointer;
 }
 
 .galerie-grid figure:hover {
@@ -44,7 +46,7 @@
 
 .galerie-grid img {
   width: 100%;
-  height: auto;
+  height: 80%;
   display: block;
 }
 
@@ -54,6 +56,7 @@
   color: #2c3e50;
   background-color: #ecf0f1;
   text-align: center;
+
 }
 
 /* 📌 Informations */
