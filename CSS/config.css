@@ -75,6 +75,13 @@ nav ul li a:hover {
   background-color: #34495e;
 }
 
+nav ul li a.active {
+  color: #141675;/* rouge */
+  font-weight: bold;
+  border-bottom: 2px solid #141675;
+}
+
+
 /* ====== MENU TOGGLE (MOBILE) ====== */
 .menu-toggle {
   display: none;

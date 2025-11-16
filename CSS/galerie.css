@@ -61,6 +61,16 @@
 
 }
 
+.galerie-video {
+  text-align: center;
+  margin: 40px 0;
+}
+.galerie-video video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 /* 📌 Informations */
 .galerie-info {
   padding: 50px 20px;
@@ -69,7 +79,7 @@
   text-align: center;
 }
 
-.galerie-info h2 {
+.galerie-info h2, .galerie-video h2 {
   font-size: 2em;
   color: #2c3e50;
   margin-bottom: 15px;
@@ -80,3 +90,145 @@
   color: #555;
 }
 
+
+/* ====================   RESPONSOVE    ======================== */
+
+/* 🖼️ Galerie intro */
+.galerie-intro {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.galerie-intro h2 {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 900;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.galerie-intro p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* 🖼️ Galerie grid */
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.galerie-grid figure {
+  margin: 0;
+  background-color: #f4f6f8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 310px;
+  cursor: pointer;
+}
+
+.galerie-grid figure:hover {
+  transform: scale(1.02);
+}
+
+.galerie-grid img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* ✅ meilleure adaptation */
+  display: block;
+}
+
+.galerie-grid figcaption {
+  padding: 15px;
+  font-size: 1em;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+/* 🎥 Galerie vidéo */
+.galerie-video {
+  text-align: center;
+  margin: 40px 0;
+}
+.galerie-video video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 📌 Informations */
+.galerie-info {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.galerie-info h2, .galerie-video h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.galerie-info p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* 📱 Responsive design */
+@media (max-width: 1024px) {
+  .galerie-intro h2 {
+    font-size: 2em;
+  }
+  .galerie-info h2, .galerie-video h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .galerie-intro {
+    padding: 30px 15px;
+  }
+  .galerie-intro h2 {
+    font-size: 1.8em;
+  }
+  .galerie-intro p,
+  .galerie-info p {
+    font-size: 1em;
+  }
+  .galerie-grid {
+    grid-template-columns: 1fr 1fr; /* ✅ 2 colonnes sur tablette */
+  }
+  .galerie-grid figure {
+    height: auto; /* ✅ évite les coupures */
+  }
+}
+
+@media (max-width: 480px) {
+  .galerie-intro h2 {
+    font-size: 1.5em;
+  }
+  .galerie-info h2, .galerie-video h2 {
+    font-size: 1.4em;
+  }
+  .galerie-intro p,
+  .galerie-info p {
+    font-size: 0.95em;
+  }
+  .galerie-grid {
+    grid-template-columns: 1fr; /* ✅ une seule colonne sur mobile */
+  }
+  .galerie-grid figcaption {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
